@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d9f7a3d53922240b071250df768b68, type: 3}
+  m_Name: 4 GrassDiscription
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: -1072690820, guid: 323891ac27e54d049aee667a486e5cfa, type: 3}
+  <Name1>k__BackingField: "\u0420\u0430\u0441\u0442\u0435\u043D\u0438\u0435 "
+  <Ingridient2>k__BackingField: {fileID: -794118834, guid: ff922573926edca41877767134abb43a, type: 3}
+  <Name2>k__BackingField: "\u0417\u0435\u043C\u043B\u044E"
+  <Result>k__BackingField: {fileID: 440201463, guid: e9a55b3ca939027458782c753ed87c70, type: 3}
+  <Name3>k__BackingField: "\u0422\u0440\u0430\u0432\u0430"

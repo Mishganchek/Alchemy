@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 20 Seaweed
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 8058035728899381251, guid: bbcb4079b3ae5404a827378fc66bbc55, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 8199691437323477983, guid: 29fdb966ad4097b48bc949eae1a05004, type: 3}
+  <Result>k__BackingField: {fileID: 3665083251462721267, guid: 3384ddf2fa00ceb4eaae8ea776f678ce, type: 3}
+  <Discriptions>k__BackingField: {fileID: 11400000, guid: 66fa54e6423cb3243bfb445e888bd7a7, type: 2}
+  <Number>k__BackingField: 20

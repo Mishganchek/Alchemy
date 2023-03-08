@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 1 Steam
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 2167163639202506528, guid: 4776c309b22e85343968b0603155b911, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 5578610106258412074, guid: 29fdb966ad4097b48bc949eae1a05004, type: 3}
+  <Result>k__BackingField: {fileID: 3987385541925821388, guid: 7ce4143c5a6fa9f49af8d5c08cc606f4, type: 3}
+  <Discriptions>k__BackingField: {fileID: 11400000, guid: ed289b8d28d6e3349abfce105bcfc18f, type: 2}
+  <Number>k__BackingField: 1

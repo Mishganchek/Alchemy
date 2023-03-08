@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 13 River
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 8199691437323477983, guid: 29fdb966ad4097b48bc949eae1a05004, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 8199691437323477983, guid: 29fdb966ad4097b48bc949eae1a05004, type: 3}
+  <Result>k__BackingField: {fileID: 2235299182859759120, guid: 4d6fdc094a83be44c8f4f4de4869f3f5, type: 3}
+  <Discriptions>k__BackingField: {fileID: 11400000, guid: 7b3e4d9ce9fe48249b12c41762d5330d, type: 2}
+  <Number>k__BackingField: 13
