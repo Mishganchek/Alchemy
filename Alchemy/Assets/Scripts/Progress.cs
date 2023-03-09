@@ -16,7 +16,7 @@ public class Progress : MonoBehaviour
     }
     private void Start()
     {
-        _textComponent.text = (_elementCounter.ReachedElements.Count + " элементов открыто из " + (_recipStorage.Templates.Length+4));
+        //_textComponent.text = (ReachedElements.Count + " элементов открыто из " + (_recipStorage.Templates.Length+4));
     }
 
     private void Update()
@@ -35,12 +35,12 @@ public class Progress : MonoBehaviour
 
     private void OnEnable()
     {
-       _spawner.NewElement += OnValueChanged;
+       _spawner.NewElementCreated += OnValueChanged;
     }
 
     private void OnDisable()
     {
-        _spawner.NewElement -= OnValueChanged;
+        _spawner.NewElementCreated -= OnValueChanged;
     }
 
     private void OnValueChanged(int value)

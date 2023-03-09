@@ -7,107 +7,96 @@ public class Spawner : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private RecipStorage _recipStorage;
     [SerializeField] private Canvas _canvas;
-    [SerializeField] private ElementCounter _elementCounter;
-    [SerializeField] private List<GameObject> _panels;
+    [SerializeField] private AlchemyElement[] _startElements;
+    [SerializeField] private int _startGridSize;
+    [SerializeField] private int _createGridSize;
     public GameObject PanelAddElements;
     public GameObject PanelAllElements;
     public GameObject PanelHint;
     public GameObject MenuPanel;
-
-    public event UnityAction<int> NewElement;
-
     public List<AlchemyElement> ChoisenElements;
 
+    private List<AlchemyElement> _reachedElements;
+
+    public IEnumerable<AlchemyElement> ReachedElements => _reachedElements;
+
+    public event UnityAction<int> NewElementCreated;
+
+
     private AlchemyElement _result;
-    private GameObject _water;
-    private GameObject _fire;
-    private GameObject _ground;
-    private GameObject _air;
     private RectTransform _rectTransform;
     private float _lastClickTime = 0f;
     private float _doubleClickTimeThreshold = 0.3f;
     private int _x = -860;
     private int _y = 240;
 
+
     private void OnEnable()
     {
-
+       AlchemyElement.OnCollisionDetectedAction += OnElementsCollided;
+        AlchemyElement.OnDoubleClickDetectedAction += CreateCopy;
     }
 
+    private void OnDisable()
+    {
+       AlchemyElement.OnCollisionDetectedAction -= OnElementsCollided;
+        AlchemyElement.OnDoubleClickDetectedAction -= CreateCopy;
+    }
     private void Start()
     {
-        _air = Resources.Load<GameObject>("Prefabs/Air");
-        _water = Resources.Load<GameObject>("Prefabs/Water");
-        _ground = Resources.Load<GameObject>("Prefabs/Ground");
-        _fire = Resources.Load<GameObject>("Prefabs/Fire");
+        _reachedElements = new List<AlchemyElement>();
 
-        _rectTransform = Instantiate(_fire, transform).GetComponent<RectTransform>();
-        _rectTransform.anchoredPosition = new Vector2(-160, 160);
+        int i=0;
 
-        _rectTransform = Instantiate(_water, transform).GetComponent<RectTransform>();
-        _rectTransform.anchoredPosition = new Vector2(160, -160);
+        foreach (var item in CreateGrid(_startGridSize*2,  new Vector2(-_startGridSize,-_startGridSize), new Vector2(2, 2)))
+        {
+            _rectTransform = Instantiate(_startElements[i].gameObject, transform).GetComponent<RectTransform>();
+            _rectTransform.anchoredPosition = item;
+            //Reach(_startElements[i]);
 
-        _rectTransform = Instantiate(_ground, transform).GetComponent<RectTransform>();
-        _rectTransform.anchoredPosition = new Vector2(160, 160);
-
-        _rectTransform = Instantiate(_air, transform).GetComponent<RectTransform>();
-        _rectTransform.anchoredPosition = new Vector2(-160, -160);
-
-        AddInReached(_air.GetComponent<AlchemyElement>());
-        AddInReached(_water.GetComponent<AlchemyElement>());
-        AddInReached(_ground.GetComponent<AlchemyElement>());
-        AddInReached(_fire.GetComponent<AlchemyElement>());
-
-        FindAllElements();
+            i++;
+        }
     }
 
     private void OnElementsCollided(AlchemyElement element1, AlchemyElement element2)
     {
-        if (_recipStorage.CheckCollision(element1, element2, out _result))
+        if (_recipStorage.TryFindRecipe(element1, element2, out _result))
         {
             AlchemyElement gameObject1 = Instantiate(_result, element2.transform.position, Quaternion.identity, _canvas.transform);
-            AddInReached(_result.GetComponent<AlchemyElement>());
-            NewElement?.Invoke(_elementCounter.ReachedElements.Count);
+            Reach(_result);
+            NewElementCreated?.Invoke(_reachedElements.Count);
             Destroy(element1.gameObject);
             Destroy(element2.gameObject);
-
-            FindAllElements();
         }
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        foreach (var panel in _panels)
-        {
-            if (panel.activeInHierarchy)
-            {
-                return;
-            }
-        }
 
         if (Time.time - _lastClickTime <= _doubleClickTimeThreshold)
         {
-            Vector2 clickPosition = eventData.position;
-            Vector2 localPosition = Vector2.zero;
-
             _rectTransform = _canvas.GetComponent<RectTransform>();
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(_rectTransform, clickPosition, _canvas.worldCamera, out localPosition);
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(_rectTransform, eventData.position, _canvas.worldCamera, out Vector2 clickPosition);
 
-            InstantiateElement(_air, localPosition + new Vector2(-100, -100));
-            InstantiateElement(_fire, localPosition + new Vector2(-100, 100));
-            InstantiateElement(_water, localPosition + new Vector2(100, -100));
-            InstantiateElement(_ground, localPosition + new Vector2(100, 100));
+            int i = 0;
+
+            foreach (var item in CreateGrid(_createGridSize*2, clickPosition +  new Vector2(-_createGridSize,-_createGridSize), new Vector2(2,2)))
+            {                
+                InstantiateElement(_startElements[i].gameObject, item);
+                i++;
+            }
         }
 
         _lastClickTime = Time.time;
 
-        FindAllElements();
     }
 
-    private void InstantiateElement(GameObject elementPrefab, Vector2 position)
+    private RectTransform InstantiateElement(GameObject elementPrefab, Vector2 position)
     {
         RectTransform elementRectTransform = Instantiate(elementPrefab, transform).GetComponent<RectTransform>();
         elementRectTransform.anchoredPosition = position;
+
+        return elementRectTransform;
     }
     public void CreateNeedElements()
     {
@@ -134,36 +123,28 @@ public class Spawner : MonoBehaviour, IPointerClickHandler
         PanelAddElements.SetActive(false);
 
     }
-    private void FindAllElements()
-    {
-        AlchemyElement[] elements = FindObjectsOfType<AlchemyElement>();
 
-        foreach (AlchemyElement element in elements)
-        {
-            element.OnCollisionDetectedAction -= OnElementsCollided;
-            element.OnDoubleClickDetectedAction -= CreateCopy;
-        }
-        
-        foreach (AlchemyElement element in elements)
-        {
-            element.OnCollisionDetectedAction += OnElementsCollided;
-            element.OnDoubleClickDetectedAction += CreateCopy;
-        }
-    }
-
-    private void AddInReached(AlchemyElement alchemyElement)
+    private void Reach(AlchemyElement alchemyElement)
     {
-        if (!_elementCounter.ReachedElements.Contains(alchemyElement))
+        if (!_reachedElements.Contains(alchemyElement))
         {
-            _elementCounter.ReachedElements.Add(alchemyElement);
+            _reachedElements.Add(alchemyElement);
         }
     }
 
     private void CreateCopy(AlchemyElement element)
     {
-        FindAllElements();
+        Instantiate(element, element.transform.position, Quaternion.identity, _canvas.transform);
+    }
 
-        AlchemyElement gameObject1 = Instantiate(element, element.transform.position, Quaternion.identity, _canvas.transform);
-
+    private IEnumerable<Vector2> CreateGrid(int step, Vector2 startPosition, Vector2 size)
+    {
+        for (int x = 0; x < size.x; x++)
+        {
+            for (int y = 0; y < size.y; y++)
+            {
+                yield return new Vector2(x * step, y * step) + startPosition;
+            }
+        }
     }
 }

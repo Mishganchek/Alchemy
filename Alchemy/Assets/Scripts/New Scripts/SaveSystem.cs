@@ -13,15 +13,15 @@ public class SaveSystem : MonoBehaviour
 
     private void SaveGame()
     {
-        _savaData = new string[_elementCounter.ReachedElements.Count];
+        //_savaData = new string[_elementCounter.ReachedElements.Count];
 
-        for (int i = 0; i < _elementCounter.ReachedElements.Count; i++)
-        {
-            //_savaData[i] = _elementCounter.ReachedElements[i].Prefab.name;
-            //Debug.Log("Сохраненые имена:");
-            //Debug.Log(_elementCounter.ReachedElements[i].Prefab.name);
+        //for (int i = 0; i < _elementCounter.ReachedElements.Count; i++)
+        //{
+        //    //_savaData[i] = _elementCounter.ReachedElements[i].Prefab.name;
+        //    //Debug.Log("Сохраненые имена:");
+        //    //Debug.Log(_elementCounter.ReachedElements[i].Prefab.name);
 
-        }
+        //}
 
         File.WriteAllLines(Application.persistentDataPath + "/SaveFile.txt", _savaData);
     }
@@ -45,7 +45,7 @@ public class SaveSystem : MonoBehaviour
         {
             if (_savaData[i] != string.Empty)
             {
-                _elementCounter.ReachedElements.Clear();
+                //_elementCounter.ReachedElements.Clear();
                 _elementCounter.AddElement(_savaData[i]);
             }
         }

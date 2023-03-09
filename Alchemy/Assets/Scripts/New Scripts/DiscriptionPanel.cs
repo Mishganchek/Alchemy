@@ -28,9 +28,9 @@ public class DiscriptionPanel : MonoBehaviour
             }
         }
 
-        _firstElement.ChangeAppearance(_currentRecipe.Discriptions.Ingridient1, _currentRecipe.Ingridient1.ElementName);
-        _secondElement.ChangeAppearance(_currentRecipe.Discriptions.Ingridient2, _currentRecipe.Ingridient2.ElementName);
-        _resultElement.ChangeAppearance(_currentRecipe.Discriptions.Result, _currentRecipe.Result.ElementName);
+        _firstElement.ChangeAppearance(_currentRecipe.Discriptions.Ingridient1, _currentRecipe.Ingridient1.ElementName,_currentRecipe.Ingridient1.name);
+        _secondElement.ChangeAppearance(_currentRecipe.Discriptions.Ingridient2, _currentRecipe.Ingridient2.ElementName, _currentRecipe.Ingridient2.name);
+        _resultElement.ChangeAppearance(_currentRecipe.Discriptions.Result, _currentRecipe.Result.ElementName, _currentRecipe.Result.name);
     }
 
 

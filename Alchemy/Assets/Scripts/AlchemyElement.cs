@@ -8,8 +8,8 @@ public class AlchemyElement : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     [SerializeField] protected string _elementName;
     [SerializeField] protected string _discriptions;
 
-    public UnityAction<AlchemyElement, AlchemyElement> OnCollisionDetectedAction;
-    public UnityAction<AlchemyElement> OnDoubleClickDetectedAction;
+    public static UnityAction<AlchemyElement, AlchemyElement> OnCollisionDetectedAction;
+    public static UnityAction<AlchemyElement> OnDoubleClickDetectedAction;
 
 
     protected TMP_Text _textComponent;
@@ -104,15 +104,6 @@ public class AlchemyElement : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         _lastClickTime = Time.time;
     }
 
-
-    public void OpenDiscriptionPanel()
-    {
-        _book._discriptionPanel.SetActive(true);
-        DiscriptionPanel discriptionPanel = _book._discriptionPanel.GetComponent<DiscriptionPanel>();
-        //discriptionPanel.FindRecipe(Prefab.name);
-        _text = _book.DiscriptionText;
-        _text.text = _discriptions;
-    }
 }
 
 

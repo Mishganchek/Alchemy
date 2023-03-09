@@ -8,18 +8,26 @@ public class PanelRecipe : MonoBehaviour
     [SerializeField] private ElementView _firstElement;
     [SerializeField] private ElementView _secondElement;
     [SerializeField] private ElementView _resultElement;
-     
-    private Hint _hint;
+
+    private Book _book;
 
     private void Awake()
     {
-        _hint = GetComponentInParent<Hint>();
+        _book = gameObject.GetComponentInParent<Book>();
     }
 
     private void OnEnable()
     {
-        _firstElement.ChangeAppearance(_hint.Recipe.Discriptions.Ingridient1, _hint.Recipe.Ingridient1.ElementName); 
-        _secondElement.ChangeAppearance(_hint.Recipe.Discriptions.Ingridient2, _hint.Recipe.Ingridient2.ElementName);  
-        _resultElement.ChangeAppearance(_hint.Recipe.Discriptions.Result, _hint.Recipe.Result.ElementName);  
+        _book.OnDiscriptionsPanelOpen +=ChangeApperans;
+      
+    }
+
+    private void ChangeApperans(Recipe recipe)
+    {
+
+        _firstElement.ChangeAppearance(recipe.Discriptions.Ingridient1, recipe.Ingridient1.ElementName, recipe.Ingridient1.name);
+        _secondElement.ChangeAppearance(recipe.Discriptions.Ingridient2, recipe.Ingridient2.ElementName, recipe.Ingridient2.name);
+        _resultElement.ChangeAppearance(recipe.Discriptions.Result, recipe.Result.ElementName, recipe.Result.name);
+
     }
 }

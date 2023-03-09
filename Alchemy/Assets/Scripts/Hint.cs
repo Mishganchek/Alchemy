@@ -26,17 +26,17 @@ public class Hint : MonoBehaviour
         _recipStorage = gameObject.GetComponentInParent<RecipStorage>();
         _rectTransform = gameObject.GetComponent<RectTransform>();
         _text = Panel.GetComponentInChildren<TMP_Text>();
-        _recipes = _recipStorage.Templates.Where(recipe => (!_elementCounter.ReachedElements.Any(element => (element.name == recipe.name)))).OrderBy(recipe => recipe.Number);
+        //_recipes = _recipStorage.Templates.Where(recipe => (!_elementCounter.ReachedElements.Any(element => (element.name == recipe.name)))).OrderBy(recipe => recipe.Number);
     }
 
     private void OnEnable()
     {
         Recipe = _recipes.First();
         gameObject.transform.SetAsLastSibling();
-        _text.text = $" Ближайший элемент {Recipe.Discriptions.Name3} \n Нужно смешать {Recipe.Discriptions.Name1} и {Recipe.Discriptions.Name2}";
+        _text.text = $" Ближайший элемент {Recipe.Discriptions.ResultNameForDiscription} \n Нужно смешать {Recipe.Discriptions.Ingridient1NameForDiscription} и {Recipe.Discriptions.Ingridient2NameForDiscription }";
 
-        _firstElement.ChangeAppearance(Recipe.Discriptions.Ingridient1, Recipe.Ingridient1.ElementName);
-        _secondElement.ChangeAppearance(Recipe.Discriptions.Ingridient2, Recipe.Ingridient2.ElementName);
-        _resultElement.ChangeAppearance(Recipe.Discriptions.Result, Recipe.Result.ElementName);
+        _firstElement.ChangeAppearance(Recipe.Discriptions.Ingridient1, Recipe.Ingridient1.ElementName,Recipe.Ingridient1.name);
+        _secondElement.ChangeAppearance(Recipe.Discriptions.Ingridient2, Recipe.Ingridient2.ElementName,Recipe.Ingridient2.name);
+        _resultElement.ChangeAppearance(Recipe.Discriptions.Result, Recipe.Result.ElementName,Recipe.Result.name);
     }
 }

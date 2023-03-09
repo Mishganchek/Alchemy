@@ -16,7 +16,7 @@ public class RecipStorage : MonoBehaviour
         }
     }
 
-    public bool CheckCollision(AlchemyElement alchemy1, AlchemyElement alchemy2, out AlchemyElement gameObject)
+    public bool TryFindRecipe(AlchemyElement alchemy1, AlchemyElement alchemy2, out AlchemyElement gameObject)
     {
         if (_recipies.TryGetValue(Tuple.Create(alchemy1.name, alchemy2.name), out gameObject))
         {

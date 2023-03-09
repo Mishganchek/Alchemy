@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
@@ -12,7 +11,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] private GameObject _chousenElementsConteiner;
     [SerializeField] private GameObject _giveElementsPanel;
     [SerializeField] private GameObject _buttonPrefab;
-    
+
     public List<AlchemyElement> ChoisenElements;
 
     private ElementCounter _elementCounter;
@@ -24,37 +23,19 @@ public class Inventory : MonoBehaviour
         _elementCounter = gameObject.GetComponentInParent<ElementCounter>();
     }
 
-    private void FindAllButton()
+    private void Start()
     {
-        ButtonFunction[] buttons = FindObjectsOfType<ButtonFunction>();
+        //foreach (var element in _elementCounter.ReachedElements.OrderBy(e => e.ElementName))
+        //{
+        //    GameObject gameObject = Instantiate(_buttonPrefab, _reachedElementsConteiner.transform);
 
-        foreach (ButtonFunction button in buttons)
-        {
-            button.AddElement += AddInChoisen;
-        }
+        //    gameObject.GetComponent<Image>().sprite = element.GetComponent<Image>().sprite;
 
-        foreach (ButtonFunction button in buttons)
-        {
-           
-        }
+        //    gameObject.GetComponentInChildren<TMP_Text>().text = element.ElementName;
+
+        //}
     }
 
-    private void OnEnable()
-    {
-
-
-        Clear(_reachedElementsConteiner);
-
-        foreach (var element in _elementCounter.ReachedElements.OrderBy(e => e.ElementName))
-        {
-           GameObject gameObject =  Instantiate(_buttonPrefab, _reachedElementsConteiner.transform);
-
-            gameObject.GetComponent<Image>().sprite = element.GetComponent<Image>().sprite;
-
-            gameObject.GetComponentInChildren<TMP_Text>().text = element.ElementName;
-
-        }
-    }
     public void CreateChoisen()
     {
         int x = -860;
@@ -94,10 +75,10 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void AddInChoisen(GameObject prefab)
+    public void AddInChoisen()
     {
-        Transform position = _chousenElementsConteiner.transform;
-        ChoisenElements.Add(prefab.GetComponent<AlchemyElement>());
-        Instantiate(prefab, position);
+        //Transform position = _chousenElementsConteiner.transform;
+        //ChoisenElements.Add(prefab.GetComponent<AlchemyElement>());
+        //Instantiate(prefab, position);
     }
 }
