@@ -5,14 +5,14 @@ public class Progress : MonoBehaviour
 {
     [SerializeField] private ElementCounter _elementCounter;
     [SerializeField] private RecipStorage _recipStorage;
+    [SerializeField] private Spawner _spawner;
     private TMP_Text _textComponent;
-    Spawner _elementSpawner;
 
     void Awake()
     {
         _textComponent = GetComponent<TMP_Text>();
         _textComponent.color = Color.white;
-        _elementSpawner = GetComponentInParent<Spawner>();
+        _spawner = GetComponentInParent<Spawner>();
     }
     private void Start()
     {
@@ -21,7 +21,7 @@ public class Progress : MonoBehaviour
 
     private void Update()
     {
-        if (_elementSpawner.PanelAddElements.activeInHierarchy|| _elementSpawner.PanelAllElements.activeInHierarchy|| _elementSpawner.PanelHint.activeInHierarchy || _elementSpawner.MenuPanel.activeInHierarchy)
+        if (_spawner.PanelAddElements.activeInHierarchy|| _spawner.PanelAllElements.activeInHierarchy|| _spawner.PanelHint.activeInHierarchy || _spawner.MenuPanel.activeInHierarchy)
         {
             this.gameObject.transform.SetAsFirstSibling();
         }
@@ -35,12 +35,12 @@ public class Progress : MonoBehaviour
 
     private void OnEnable()
     {
-        _elementCounter.NewElement += OnValueChanged;
+       _spawner.NewElement += OnValueChanged;
     }
 
     private void OnDisable()
     {
-        _elementCounter.NewElement -= OnValueChanged;
+        _spawner.NewElement -= OnValueChanged;
     }
 
     private void OnValueChanged(int value)

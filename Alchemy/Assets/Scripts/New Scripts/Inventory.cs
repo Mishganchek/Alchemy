@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
@@ -8,7 +11,8 @@ public class Inventory : MonoBehaviour
     [SerializeField] private GameObject _reachedElementsConteiner;
     [SerializeField] private GameObject _chousenElementsConteiner;
     [SerializeField] private GameObject _giveElementsPanel;
-
+    [SerializeField] private GameObject _buttonPrefab;
+    
     public List<AlchemyElement> ChoisenElements;
 
     private ElementCounter _elementCounter;
@@ -20,13 +24,35 @@ public class Inventory : MonoBehaviour
         _elementCounter = gameObject.GetComponentInParent<ElementCounter>();
     }
 
+    private void FindAllButton()
+    {
+        ButtonFunction[] buttons = FindObjectsOfType<ButtonFunction>();
+
+        foreach (ButtonFunction button in buttons)
+        {
+            button.AddElement += AddInChoisen;
+        }
+
+        foreach (ButtonFunction button in buttons)
+        {
+           
+        }
+    }
+
     private void OnEnable()
     {
+
+
         Clear(_reachedElementsConteiner);
 
         foreach (var element in _elementCounter.ReachedElements.OrderBy(e => e.ElementName))
         {
-            Instantiate(element, _reachedElementsConteiner.transform);
+           GameObject gameObject =  Instantiate(_buttonPrefab, _reachedElementsConteiner.transform);
+
+            gameObject.GetComponent<Image>().sprite = element.GetComponent<Image>().sprite;
+
+            gameObject.GetComponentInChildren<TMP_Text>().text = element.ElementName;
+
         }
     }
     public void CreateChoisen()

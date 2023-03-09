@@ -765,6 +765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bookContent: {fileID: 1002502933}
+  _buttonPrefab: {fileID: 2095262142333988695, guid: f07ad7ac18a4e87418e8c96f57a9d0a2, type: 3}
   <_discriptionPanel>k__BackingField: {fileID: 1982137351}
   <DiscriptionText>k__BackingField: {fileID: 552312405}
 --- !u!1 &149571728
@@ -3401,6 +3402,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _recipStorage: {fileID: 1089124095}
   _canvas: {fileID: 1089124092}
+  _elementCounter: {fileID: 1089124096}
+  _panels:
+  - {fileID: 2108617287}
+  - {fileID: 125535257}
+  - {fileID: 1377077542}
+  - {fileID: 195804200}
   PanelAddElements: {fileID: 2108617287}
   PanelAllElements: {fileID: 125535257}
   PanelHint: {fileID: 1377077542}
@@ -5028,6 +5035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _elementCounter: {fileID: 1089124096}
   _recipStorage: {fileID: 1089124095}
+  _spawner: {fileID: 1089124097}
 --- !u!114 &1503784931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7159,6 +7167,7 @@ MonoBehaviour:
   _reachedElementsConteiner: {fileID: 1645230961}
   _chousenElementsConteiner: {fileID: 780002440}
   _giveElementsPanel: {fileID: 2108617287}
+  _buttonPrefab: {fileID: 2095262142333988695, guid: f07ad7ac18a4e87418e8c96f57a9d0a2, type: 3}
   ChoisenElements: []
 --- !u!1 &2109404322
 GameObject:

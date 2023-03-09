@@ -3,13 +3,13 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public  class AlchemyElement : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler
+public class AlchemyElement : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler
 {
     [SerializeField] protected string _elementName;
     [SerializeField] protected string _discriptions;
 
-     public UnityAction<AlchemyElement, AlchemyElement> OnCollisionDetectedAction;
-     public UnityAction<AlchemyElement> OnDoubleClickDetectedAction;
+    public UnityAction<AlchemyElement, AlchemyElement> OnCollisionDetectedAction;
+    public UnityAction<AlchemyElement> OnDoubleClickDetectedAction;
 
 
     protected TMP_Text _textComponent;
@@ -19,6 +19,7 @@ public  class AlchemyElement : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     private PanelManager _panelManager;
     private bool _triger;
     private AlchemyElement _saveElement;
+    private float _lastClickTime;
 
     public string Name { get; private set; }
     public string ElementName => _elementName;
@@ -33,10 +34,9 @@ public  class AlchemyElement : MonoBehaviour, IPointerDownHandler, IPointerUpHan
         _textComponent.text = _elementName;
         _textComponent.color = Color.white;
         _textComponent.alignment = TextAlignmentOptions.Midline;
-        //_elementCounter.AddElement(Prefab.GetComponent<AlchemyElement>());
     }
 
-    protected void OnCollisionEnter2D(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if (!_triger)
         {
@@ -89,30 +89,27 @@ public  class AlchemyElement : MonoBehaviour, IPointerDownHandler, IPointerUpHan
             return;
         }
 
-         OnCollisionDetectedAction?.Invoke(_saveElement, this);
+        OnCollisionDetectedAction?.Invoke(_saveElement, this);
 
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        //if (_panelManager.IsGivePanelOpen)
-        //{
-        //}
-        //else if (_panelManager.IsBookPanelOpen)
-        //{
-        //}
-        //else
-        //{
-        //}
-
+        if (Time.time - _lastClickTime <= 0.8f)
+        {
             OnDoubleClickDetectedAction?.Invoke(this);
+
+        }
+
+        _lastClickTime = Time.time;
     }
+
 
     public void OpenDiscriptionPanel()
     {
         _book._discriptionPanel.SetActive(true);
-       DiscriptionPanel discriptionPanel =  _book._discriptionPanel.GetComponent<DiscriptionPanel>();
-       //discriptionPanel.FindRecipe(Prefab.name);
+        DiscriptionPanel discriptionPanel = _book._discriptionPanel.GetComponent<DiscriptionPanel>();
+        //discriptionPanel.FindRecipe(Prefab.name);
         _text = _book.DiscriptionText;
         _text.text = _discriptions;
     }

@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Book : MonoBehaviour
 {
     [SerializeField] private GameObject _bookContent;
+    [SerializeField] private GameObject _buttonPrefab;
 
     [field: SerializeField] public GameObject _discriptionPanel { get; private set; }
     [field: SerializeField] public TMP_Text DiscriptionText { get; private set; }
@@ -25,7 +27,12 @@ public class Book : MonoBehaviour
 
         foreach (var element in _elementCounter.ReachedElements.OrderBy(e => e.ElementName))
         {
-            Instantiate(element, _bookContent.transform);
+            GameObject gameObject = Instantiate(_buttonPrefab, _bookContent.transform);
+
+            gameObject.GetComponent<Image>().sprite = element.GetComponent<Image>().sprite;
+
+            gameObject.GetComponentInChildren<TMP_Text>().text = element.ElementName;
+
         }
     }
 
