@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
   m_Name: 17 Rainbow
   m_EditorClassIdentifier: 
-  <Ingridient1>k__BackingField: {fileID: 7209481286547885097, guid: 5a81b29ad9e3cde48bf183b0663bebd5, type: 3}
-  <Ingridient2>k__BackingField: {fileID: 8968633821485775801, guid: e612d19e3500a644498856b25c8ab6ed, type: 3}
-  <Result>k__BackingField: {fileID: 165412274630273817, guid: 55885b79cab5b004cbab6b6db4ee62ba, type: 3}
-  <Discriptions>k__BackingField: {fileID: 11400000, guid: 2f0c8d33781b1524c8634204779090d6, type: 2}
+  <Ingridient1>k__BackingField: {fileID: 2761098118399383832, guid: 5a81b29ad9e3cde48bf183b0663bebd5, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 8476271235014196656, guid: e612d19e3500a644498856b25c8ab6ed, type: 3}
+  <Result>k__BackingField: {fileID: 5513475627549434573, guid: 55885b79cab5b004cbab6b6db4ee62ba, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 8d4ba1ec4bad07f4fbf514db1b533aa3, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: ff4f81019dfee92469fef531c7884de5, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 2f0c8d33781b1524c8634204779090d6, type: 2}
   <Number>k__BackingField: 17
+  <Text>k__BackingField: 

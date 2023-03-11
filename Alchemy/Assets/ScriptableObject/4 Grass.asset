@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
   m_Name: 4 Grass
   m_EditorClassIdentifier: 
-  <Ingridient1>k__BackingField: {fileID: 8058035728899381251, guid: bbcb4079b3ae5404a827378fc66bbc55, type: 3}
-  <Ingridient2>k__BackingField: {fileID: 1448961522638992402, guid: c8176db224beb344d931005b273c6ee9, type: 3}
-  <Result>k__BackingField: {fileID: 205941091762524594, guid: 96e2a3de9d9acbd4e938859b1d52cd46, type: 3}
-  <Discriptions>k__BackingField: {fileID: 11400000, guid: 3ab0a175d21af124baa1b86861ab1be1, type: 2}
+  <Ingridient1>k__BackingField: {fileID: 3653463194915367832, guid: c8176db224beb344d931005b273c6ee9, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 150036264658751562, guid: bbcb4079b3ae5404a827378fc66bbc55, type: 3}
+  <Result>k__BackingField: {fileID: 3611208731659855075, guid: 96e2a3de9d9acbd4e938859b1d52cd46, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 7bfb4b2fa8882ca4389e1e2c82887492, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: af21916d6f47bf340ba901ac1746ec5c, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 7bea4ee124e1cb44e918ed24788e688c, type: 2}
   <Number>k__BackingField: 4
+  <Text>k__BackingField: 

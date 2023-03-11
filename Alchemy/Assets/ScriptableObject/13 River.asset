@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
   m_Name: 13 River
   m_EditorClassIdentifier: 
-  <Ingridient1>k__BackingField: {fileID: 8199691437323477983, guid: 29fdb966ad4097b48bc949eae1a05004, type: 3}
-  <Ingridient2>k__BackingField: {fileID: 8199691437323477983, guid: 29fdb966ad4097b48bc949eae1a05004, type: 3}
-  <Result>k__BackingField: {fileID: 2235299182859759120, guid: 4d6fdc094a83be44c8f4f4de4869f3f5, type: 3}
-  <Discriptions>k__BackingField: {fileID: 11400000, guid: 7b3e4d9ce9fe48249b12c41762d5330d, type: 2}
+  <Ingridient1>k__BackingField: {fileID: 5578610106258412074, guid: 29fdb966ad4097b48bc949eae1a05004, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 5578610106258412074, guid: 29fdb966ad4097b48bc949eae1a05004, type: 3}
+  <Result>k__BackingField: {fileID: 3348567056455603565, guid: 4d6fdc094a83be44c8f4f4de4869f3f5, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 98d6b0cb327922f4f899ce38871d237c, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 98d6b0cb327922f4f899ce38871d237c, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: d034d0069f829514381d2c8179ced9ed, type: 2}
   <Number>k__BackingField: 13
+  <Text>k__BackingField: 

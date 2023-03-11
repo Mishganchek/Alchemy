@@ -20,7 +20,7 @@ public class Spawner : MonoBehaviour
     public int ReachedCount => _reachedElements.Count;
     private List<AlchemyElement> _reachedElements;
 
-    public IEnumerable<AlchemyElement> ReachedElements => _reachedElements;
+    public List<AlchemyElement> ReachedElements => _reachedElements;
 
     public event UnityAction<int> NewElementCreated;
 
@@ -148,6 +148,17 @@ public class Spawner : MonoBehaviour
             for (int y = 0; y < size.y; y++)
             {
                 yield return new Vector2(x * step, y * step) + startPosition;
+            }
+        }
+    }
+
+    public void AddElement(string name)
+    {
+        foreach (var recipe in _recipStorage.Templates)
+        {
+            if(name == recipe.Discriptions3.Name)
+            {
+                _reachedElements.Add(recipe.Result);
             }
         }
     }

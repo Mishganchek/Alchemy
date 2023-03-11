@@ -99,5 +99,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: 7 Frost
       objectReference: {fileID: 0}
+    - target: {fileID: 5710845047290449095, guid: 16f3ded5f182be64aafaec9bfd4a2c16, type: 3}
+      propertyPath: _elementName
+      value: "\u041C\u043E\u0440\u043E\u0437"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16f3ded5f182be64aafaec9bfd4a2c16, type: 3}

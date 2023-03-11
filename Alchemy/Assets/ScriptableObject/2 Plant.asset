@@ -15,5 +15,8 @@ MonoBehaviour:
   <Ingridient1>k__BackingField: {fileID: 5578610106258412074, guid: 29fdb966ad4097b48bc949eae1a05004, type: 3}
   <Ingridient2>k__BackingField: {fileID: 3653463194915367832, guid: c8176db224beb344d931005b273c6ee9, type: 3}
   <Result>k__BackingField: {fileID: 150036264658751562, guid: bbcb4079b3ae5404a827378fc66bbc55, type: 3}
-  <Discriptions>k__BackingField: {fileID: 11400000, guid: 23fa83d6c6b6a7f45916ae989de406a7, type: 2}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 98d6b0cb327922f4f899ce38871d237c, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: af21916d6f47bf340ba901ac1746ec5c, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 7bfb4b2fa8882ca4389e1e2c82887492, type: 2}
   <Number>k__BackingField: 2
+  <Text>k__BackingField: 

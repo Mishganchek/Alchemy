@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
   m_Name: 24 Apple
   m_EditorClassIdentifier: 
-  <Ingridient1>k__BackingField: {fileID: 0}
-  <Ingridient2>k__BackingField: {fileID: 0}
-  <Result>k__BackingField: {fileID: 0}
-  <Discriptions>k__BackingField: {fileID: 0}
-  <Number>k__BackingField: 0
+  <Ingridient1>k__BackingField: {fileID: 8668459736129844211, guid: 2ad3c95402ff3b748b6404698cf90a56, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 5031978365941715264, guid: 590cac6aa03354641b290a16205a2fda, type: 3}
+  <Result>k__BackingField: {fileID: 8837839504633737468, guid: 2ad152b8fe0ba9f429009d1168bc0247, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 77a50ce81cb335b40bf7ec230eda1e38, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: ec46ab0570e2aaf4ab8ef83e6d28cfd9, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: ec770adc46f7d5b4883b51cdbaf16669, type: 2}
+  <Number>k__BackingField: 24
+  <Text>k__BackingField: 

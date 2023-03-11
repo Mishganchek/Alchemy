@@ -1,0 +1,365 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.19f1 (c9714fde33b6) revision 13201743'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Education' Language: 'ru' Physical Memory: 7615 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\unity\2021.3.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+D:/git'/Alchemy/Alchemy
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+65488
+Successfully changed project path to: D:/git'/Alchemy/Alchemy
+D:/git'/Alchemy/Alchemy
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [4360] Host "[IP] 0.0.0.0 [Port] 0 [Flags] 2 [Guid] 3049942224 [EditorId] 3049942224 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H41ECRA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [4360] Host "[IP] 0.0.0.0 [Port] 0 [Flags] 2 [Guid] 3049942224 [EditorId] 3049942224 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-H41ECRA) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 490.42 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.19f1 (c9714fde33b6)
+[Subsystems] Discovering subsystems at path D:/unity/2021.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/git'/Alchemy/Alchemy/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 620 (ID=0x5917)
+    Vendor:   Intel
+    VRAM:     3807 MB
+    Driver:   26.20.100.7812
+Initialize mono
+Mono path[0] = 'D:/unity/2021.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'D:/unity/2021.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/unity/2021.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56520
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/unity/2021.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/unity/2021.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008118 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 306.68 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.134 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2137ms)
+		BeginReloadAssembly (253ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1554ms)
+			LoadAssemblies (250ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (385ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (87ms)
+			SetupLoadedEditorAssemblies (907ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (307ms)
+				BeforeProcessingInitializeOnLoad (4ms)
+				ProcessInitializeOnLoadAttributes (411ms)
+				ProcessInitializeOnLoadMethodAttributes (169ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.065074 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\git'\Alchemy\Alchemy\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\git'\Alchemy\Alchemy\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 316.40 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.594 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3596ms)
+		BeginReloadAssembly (345ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (2896ms)
+			LoadAssemblies (223ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (823ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (162ms)
+			SetupLoadedEditorAssemblies (1524ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (55ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (317ms)
+				BeforeProcessingInitializeOnLoad (274ms)
+				ProcessInitializeOnLoadAttributes (738ms)
+				ProcessInitializeOnLoadMethodAttributes (130ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3802 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (56.5 KB). Loaded Objects now: 4263.
+Memory consumption went from 146.7 MB to 146.7 MB.
+Total: 9.273900 ms (FindLiveObjects: 0.750800 ms CreateObjectMapping: 0.672600 ms MarkObjects: 7.636200 ms  DeleteObjects: 0.211600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 772391.426079 seconds.
+  path: Assets/Алхимия элементы/Elements/10 Солнце.png
+  artifactKey: Guid(9b872b7af49ea0d47a3b76bb62960dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/10 Солнце.png using Guid(9b872b7af49ea0d47a3b76bb62960dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cb1c3b8ee6ec1942a2bc01282eae0ba') in 0.793542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Алхимия элементы/Elements/11 Жара.png
+  artifactKey: Guid(3770fc3c7d9ad7a4a882178c46d16f97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/11 Жара.png using Guid(3770fc3c7d9ad7a4a882178c46d16f97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f824ec05609eb981a26d7a4f64ae91e') in 0.185534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.390332 seconds.
+  path: Assets/Алхимия элементы/Elements/14 Облако.png
+  artifactKey: Guid(a2f0bf54de911e8468c05e0645292420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/14 Облако.png using Guid(a2f0bf54de911e8468c05e0645292420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '197bd68c794707e1b0491a68cb5202a8') in 0.298031 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008170 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\git'\Alchemy\Alchemy\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\git'\Alchemy\Alchemy\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.43 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in 10.476 seconds
+Domain Reload Profiling:
+	ReloadAssembly (10477ms)
+		BeginReloadAssembly (4130ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (118ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1142ms)
+		EndReloadAssembly (2418ms)
+			LoadAssemblies (2920ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (736ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (507ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (33ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (155ms)
+				ProcessInitializeOnLoadAttributes (272ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.45 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3778 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (24.7 KB). Loaded Objects now: 4277.
+Memory consumption went from 148.6 MB to 148.6 MB.
+Total: 3.723000 ms (FindLiveObjects: 0.290700 ms CreateObjectMapping: 0.221200 ms MarkObjects: 3.181500 ms  DeleteObjects: 0.027600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 76.583513 seconds.
+  path: Assets/Алхимия элементы/menu.png
+  artifactKey: Guid(e7e4f6055eca95144808ea4b9f7212ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/menu.png using Guid(e7e4f6055eca95144808ea4b9f7212ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f77b14217d0fd3a5803ac6fac4645e21') in 0.522998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Алхимия элементы/Naruto_OST_-_Smert_Haku_(Gybka.com).mp3
+  artifactKey: Guid(6a2445d1022cddb4ea0c5afcac418478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Naruto_OST_-_Smert_Haku_(Gybka.com).mp3 using Guid(6a2445d1022cddb4ea0c5afcac418478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9c1ce19625af113fc89a4681de7600') in 0.325088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.268929 seconds.
+  path: Assets/Алхимия элементы/Elements/16 Гриб.png
+  artifactKey: Guid(a98bd0669da4cb6458ffb73991a5d7cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/16 Гриб.png using Guid(a98bd0669da4cb6458ffb73991a5d7cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3986f19deadbd8d8813d2d03799633c6') in 0.333245 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Алхимия элементы/Elements/50 Хлопок.png
+  artifactKey: Guid(dcdd2e155242c3845add5e9620ddef31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/50 Хлопок.png using Guid(dcdd2e155242c3845add5e9620ddef31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76d8e070fb2e4b023a4ff8a08f3befef') in 0.570758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Алхимия элементы/Elements/44 Гусеница.png
+  artifactKey: Guid(dbb979714d1d7ac4bb9117c761eb6f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/44 Гусеница.png using Guid(dbb979714d1d7ac4bb9117c761eb6f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8f6337c8b2a6b4c832e9f748c80a71f') in 0.596073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Алхимия элементы/Elements/37 Пещера.png
+  artifactKey: Guid(980976443357d4e49a6505092c46d219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/37 Пещера.png using Guid(980976443357d4e49a6505092c46d219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66206750287535945e9a0a906c270160') in 0.252044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Алхимия элементы/Elements/17 Радуга.png
+  artifactKey: Guid(7a4b3e1e4a5a24e4088ca2f2be994075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/17 Радуга.png using Guid(7a4b3e1e4a5a24e4088ca2f2be994075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4586b2e099dde7029ec4d28b8a18a8a') in 0.233179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Алхимия элементы/Elements/36 Дракон.png
+  artifactKey: Guid(1679fe5e82737044ab551c1dadbc74da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/36 Дракон.png using Guid(1679fe5e82737044ab551c1dadbc74da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9895d6b79b650a877d58cf2111a7fced') in 0.273160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Алхимия элементы/Elements/41 Червь.png
+  artifactKey: Guid(1f07ef28b0b04054ca7788d327239e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/41 Червь.png using Guid(1f07ef28b0b04054ca7788d327239e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f881dc54ea0e7aa6f6942de366c1b99d') in 0.580801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Алхимия элементы/Elements/30 Бетон.png
+  artifactKey: Guid(cbe6ba1f02c64c74297f2f5d4a8e2bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/30 Бетон.png using Guid(cbe6ba1f02c64c74297f2f5d4a8e2bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16d997a744eae8c9c2778e0e8776caaa') in 0.148980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Алхимия элементы/Elements/20 Водоросли.png
+  artifactKey: Guid(6c7814e20dcaefe4fbc03b200ec397a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/20 Водоросли.png using Guid(6c7814e20dcaefe4fbc03b200ec397a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31e737e4765b1fdf2dd641b4bfb0d35e') in 0.327298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Алхимия элементы/Elements/25 Гора.png
+  artifactKey: Guid(67bdd5d82ce29364e83294fcd35f46e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/25 Гора.png using Guid(67bdd5d82ce29364e83294fcd35f46e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '347695e9b0e63575d6c8eaa96f4be78a') in 0.306832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Алхимия элементы/Elements/49 Снег.png
+  artifactKey: Guid(fba0bdb3864599547abe6795f4ba2075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/49 Снег.png using Guid(fba0bdb3864599547abe6795f4ba2075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ef3e8e3b9f88b74f4ecbcc65b6c712') in 0.689313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Алхимия элементы/Elements/Земля.png
+  artifactKey: Guid(ff922573926edca41877767134abb43a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/Земля.png using Guid(ff922573926edca41877767134abb43a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e23788f06c952d4d1f102f38ab9dd9f') in 0.211424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Алхимия элементы/Elements/26 Вулкан.png
+  artifactKey: Guid(bf0f3781a4d982c47a5b2161e10e8b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/26 Вулкан.png using Guid(bf0f3781a4d982c47a5b2161e10e8b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36c8a1d88f5704439cecd90a59d5779') in 0.228455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Алхимия элементы/Elements/34 Ящерица.png
+  artifactKey: Guid(cbe5838bd9d9ab4499c7b700168dfc76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/34 Ящерица.png using Guid(cbe5838bd9d9ab4499c7b700168dfc76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfdf8397bdd719bb62c12d136919920d') in 0.255729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Алхимия элементы/Elements/48 Суши.png
+  artifactKey: Guid(9033e3daa08caab4ab6ccf8872c4f83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/48 Суши.png using Guid(9033e3daa08caab4ab6ccf8872c4f83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21cbf2f564d1c7c90735c96f41cd0687') in 0.511778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Алхимия элементы/Elements/Вода.png
+  artifactKey: Guid(d2f3df15dd92d5c44b162bbf2fe2c823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/Вода.png using Guid(d2f3df15dd92d5c44b162bbf2fe2c823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e7d18fe92bda87b2383151715752664') in 1.027515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Алхимия элементы/Elements/24 Яблоко.png
+  artifactKey: Guid(c67cbd47cd26a5149b97573f2c648905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/24 Яблоко.png using Guid(c67cbd47cd26a5149b97573f2c648905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '989a8cc68285f62c1afe1f3097559da3') in 0.163238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/Алхимия элементы/Elements/28 Стекло.png
+  artifactKey: Guid(3b9279af412cee241a1e46b4060aa53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Алхимия элементы/Elements/28 Стекло.png using Guid(3b9279af412cee241a1e46b4060aa53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c77038ece06c11bdcad343c249ce0b') in 0.156940 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -99,5 +99,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: 11 Heat
       objectReference: {fileID: 0}
+    - target: {fileID: 5710845047290449095, guid: 16f3ded5f182be64aafaec9bfd4a2c16, type: 3}
+      propertyPath: _elementName
+      value: "\u0416\u0430\u0440\u0430"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16f3ded5f182be64aafaec9bfd4a2c16, type: 3}

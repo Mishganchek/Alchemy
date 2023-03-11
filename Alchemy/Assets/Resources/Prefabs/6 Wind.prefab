@@ -99,25 +99,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: 6 Wind
       objectReference: {fileID: 0}
+    - target: {fileID: 5710845047290449095, guid: 16f3ded5f182be64aafaec9bfd4a2c16, type: 3}
+      propertyPath: _elementName
+      value: "\u0412\u0435\u0442\u0435\u0440"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16f3ded5f182be64aafaec9bfd4a2c16, type: 3}
---- !u!1 &3201807019867903436 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4312813355417624130, guid: 16f3ded5f182be64aafaec9bfd4a2c16, type: 3}
-  m_PrefabInstance: {fileID: 1708318228862618510}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1416887898505105748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3201807019867903436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a5477a5855d5d54ba02ed280e518e3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _elementName: "\u0412\u0435\u0442\u0435\u0440"
-  _discriptions: 
-  Prefab: {fileID: 3201807019867903436}

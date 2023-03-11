@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
   m_Name: 23 Gravity
   m_EditorClassIdentifier: 
-  <Ingridient1>k__BackingField: {fileID: 0}
-  <Ingridient2>k__BackingField: {fileID: 0}
-  <Result>k__BackingField: {fileID: 0}
-  <Discriptions>k__BackingField: {fileID: 0}
-  <Number>k__BackingField: 0
+  <Ingridient1>k__BackingField: {fileID: 3741576301831000682, guid: 20d5f152d985d00478e27cab1f3cdba4, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 3653463194915367832, guid: c8176db224beb344d931005b273c6ee9, type: 3}
+  <Result>k__BackingField: {fileID: 5031978365941715264, guid: 590cac6aa03354641b290a16205a2fda, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 6a77451ab73f49042830b9ad735f655f, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: af21916d6f47bf340ba901ac1746ec5c, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: ec46ab0570e2aaf4ab8ef83e6d28cfd9, type: 2}
+  <Number>k__BackingField: 23
+  <Text>k__BackingField: 

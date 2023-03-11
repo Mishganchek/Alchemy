@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
   m_Name: 12 Coal
   m_EditorClassIdentifier: 
-  <Ingridient1>k__BackingField: {fileID: -6097778885686254273, guid: 4776c309b22e85343968b0603155b911, type: 3}
-  <Ingridient2>k__BackingField: {fileID: 8058035728899381251, guid: bbcb4079b3ae5404a827378fc66bbc55, type: 3}
-  <Result>k__BackingField: {fileID: 3759271755817450162, guid: 46a0c3fb91730a841a367c14c0d87aa9, type: 3}
-  <Discriptions>k__BackingField: {fileID: 11400000, guid: 6bcecaca9a54d0743afd4b04b7670683, type: 2}
+  <Ingridient1>k__BackingField: {fileID: 2167163639202506528, guid: 4776c309b22e85343968b0603155b911, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 150036264658751562, guid: bbcb4079b3ae5404a827378fc66bbc55, type: 3}
+  <Result>k__BackingField: {fileID: 7451224694176125904, guid: 46a0c3fb91730a841a367c14c0d87aa9, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 343a897cdf98a5140a4a625e6fbfd8b1, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 7bfb4b2fa8882ca4389e1e2c82887492, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: bd336bd2e8a7a2442b299d591c71358a, type: 2}
   <Number>k__BackingField: 12
+  <Text>k__BackingField: 

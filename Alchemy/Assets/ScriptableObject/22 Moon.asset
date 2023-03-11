@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
   m_Name: 22 Moon
   m_EditorClassIdentifier: 
-  <Ingridient1>k__BackingField: {fileID: 0}
-  <Ingridient2>k__BackingField: {fileID: 0}
-  <Result>k__BackingField: {fileID: 0}
-  <Discriptions>k__BackingField: {fileID: 0}
-  <Number>k__BackingField: 0
+  <Ingridient1>k__BackingField: {fileID: 3741576301831000682, guid: 20d5f152d985d00478e27cab1f3cdba4, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 5382694835470198773, guid: c5863f362cc08734986c73d4ea7a0620, type: 3}
+  <Result>k__BackingField: {fileID: 119651672451815186, guid: 902f298e926541f4990f2ab3612e289a, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 6a77451ab73f49042830b9ad735f655f, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: b62c210e6355cf64096b456b8d020e3d, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: b58b7757a3d6e454c9755b2a1751d3ff, type: 2}
+  <Number>k__BackingField: 22
+  <Text>k__BackingField: 

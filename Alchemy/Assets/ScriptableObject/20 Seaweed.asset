@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
   m_Name: 20 Seaweed
   m_EditorClassIdentifier: 
-  <Ingridient1>k__BackingField: {fileID: 8058035728899381251, guid: bbcb4079b3ae5404a827378fc66bbc55, type: 3}
-  <Ingridient2>k__BackingField: {fileID: 8199691437323477983, guid: 29fdb966ad4097b48bc949eae1a05004, type: 3}
-  <Result>k__BackingField: {fileID: 3665083251462721267, guid: 3384ddf2fa00ceb4eaae8ea776f678ce, type: 3}
-  <Discriptions>k__BackingField: {fileID: 11400000, guid: 66fa54e6423cb3243bfb445e888bd7a7, type: 2}
+  <Ingridient1>k__BackingField: {fileID: 5578610106258412074, guid: 29fdb966ad4097b48bc949eae1a05004, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 150036264658751562, guid: bbcb4079b3ae5404a827378fc66bbc55, type: 3}
+  <Result>k__BackingField: {fileID: 1916170060710441, guid: 3384ddf2fa00ceb4eaae8ea776f678ce, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 98d6b0cb327922f4f899ce38871d237c, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 7bfb4b2fa8882ca4389e1e2c82887492, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: dc31f564c2c03c24591cd420f8250e81, type: 2}
   <Number>k__BackingField: 20
+  <Text>k__BackingField: 

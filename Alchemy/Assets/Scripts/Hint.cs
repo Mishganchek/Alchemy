@@ -16,8 +16,6 @@ public class Hint : MonoBehaviour
     private TMP_Text _text;
     private IEnumerable<Recipe> _recipes;
 
-    public event UnityAction<Recipe> OnHintPanelOpened;
-
     public Recipe Recipe { get; private set; }
 
     private void Awake()
@@ -39,6 +37,6 @@ public class Hint : MonoBehaviour
         Recipe = _recipes.First();
         gameObject.transform.SetAsLastSibling();
         _hintRecipe.ChangeApperans(Recipe);
-        _text.text = $" Ближайший элемент {Recipe.Discriptions3.NameForDiscription} \n Нужно смешать {Recipe.Discriptions1.NameForDiscription} и {Recipe.Discriptions2.NameForDiscription }";
+        _text.text = $" Ближайший элемент {Recipe.Discriptions3.Name} \n Нужно смешать {Recipe.Discriptions1.NameForDiscription} и {Recipe.Discriptions2.NameForDiscription }";
     }
 }

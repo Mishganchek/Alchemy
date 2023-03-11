@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
   m_Name: 21 Stone
   m_EditorClassIdentifier: 
-  <Ingridient1>k__BackingField: {fileID: 0}
-  <Ingridient2>k__BackingField: {fileID: 0}
-  <Result>k__BackingField: {fileID: 0}
-  <Discriptions>k__BackingField: {fileID: 0}
-  <Number>k__BackingField: 0
+  <Ingridient1>k__BackingField: {fileID: 3653463194915367832, guid: c8176db224beb344d931005b273c6ee9, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 3653463194915367832, guid: c8176db224beb344d931005b273c6ee9, type: 3}
+  <Result>k__BackingField: {fileID: 5382694835470198773, guid: c5863f362cc08734986c73d4ea7a0620, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: af21916d6f47bf340ba901ac1746ec5c, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: af21916d6f47bf340ba901ac1746ec5c, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: b62c210e6355cf64096b456b8d020e3d, type: 2}
+  <Number>k__BackingField: 21
+  <Text>k__BackingField: 

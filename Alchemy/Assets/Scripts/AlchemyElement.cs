@@ -6,7 +6,6 @@ using UnityEngine.EventSystems;
 public class AlchemyElement : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler
 {
     [SerializeField] protected string _elementName;
-    [SerializeField] protected string _discriptions;
 
     public static UnityAction<AlchemyElement, AlchemyElement> OnCollisionDetectedAction;
     public static UnityAction<AlchemyElement> OnDoubleClickDetectedAction;

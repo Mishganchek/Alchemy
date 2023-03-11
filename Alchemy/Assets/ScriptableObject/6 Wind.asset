@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
   m_Name: 6 Wind
   m_EditorClassIdentifier: 
-  <Ingridient1>k__BackingField: {fileID: 4962457728875533600, guid: c35da4f0b5e387348a3acd3e59f6af4b, type: 3}
-  <Ingridient2>k__BackingField: {fileID: 4962457728875533600, guid: c35da4f0b5e387348a3acd3e59f6af4b, type: 3}
-  <Result>k__BackingField: {fileID: 1416887898505105748, guid: 1faf189e5c4d1454981a55d48036f412, type: 3}
-  <Discriptions>k__BackingField: {fileID: 11400000, guid: f6140cd98f25b934690f4635f3d84220, type: 2}
+  <Ingridient1>k__BackingField: {fileID: 6876411522203721369, guid: c35da4f0b5e387348a3acd3e59f6af4b, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 6876411522203721369, guid: c35da4f0b5e387348a3acd3e59f6af4b, type: 3}
+  <Result>k__BackingField: {fileID: 6410264050552637257, guid: 1faf189e5c4d1454981a55d48036f412, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: ab9f1a50c0d52c44fbeaa4d3b2391ebb, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: ab9f1a50c0d52c44fbeaa4d3b2391ebb, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 90fee1dd16595cd4da82e180fca0909d, type: 2}
   <Number>k__BackingField: 6
+  <Text>k__BackingField: 

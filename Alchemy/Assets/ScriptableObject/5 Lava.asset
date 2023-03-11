@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
   m_Name: 5 Lava
   m_EditorClassIdentifier: 
-  <Ingridient1>k__BackingField: {fileID: 1448961522638992402, guid: c8176db224beb344d931005b273c6ee9, type: 3}
-  <Ingridient2>k__BackingField: {fileID: -6097778885686254273, guid: 4776c309b22e85343968b0603155b911, type: 3}
-  <Result>k__BackingField: {fileID: 4841042056438575938, guid: c0bf276f867f9d5459f6873fd3eb8bf1, type: 3}
-  <Discriptions>k__BackingField: {fileID: 11400000, guid: e1a116d006a85ac4ba34678c649754f2, type: 2}
+  <Ingridient1>k__BackingField: {fileID: 2167163639202506528, guid: 4776c309b22e85343968b0603155b911, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 3653463194915367832, guid: c8176db224beb344d931005b273c6ee9, type: 3}
+  <Result>k__BackingField: {fileID: 407206106517595427, guid: c0bf276f867f9d5459f6873fd3eb8bf1, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 343a897cdf98a5140a4a625e6fbfd8b1, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: af21916d6f47bf340ba901ac1746ec5c, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: a5f30d8fe172a724f8090e20cb33b7cb, type: 2}
   <Number>k__BackingField: 5
+  <Text>k__BackingField: 

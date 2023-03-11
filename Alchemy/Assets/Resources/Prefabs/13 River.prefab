@@ -99,5 +99,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: 13 River
       objectReference: {fileID: 0}
+    - target: {fileID: 5710845047290449095, guid: 16f3ded5f182be64aafaec9bfd4a2c16, type: 3}
+      propertyPath: _elementName
+      value: "\u0420\u0435\u043A\u0430"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16f3ded5f182be64aafaec9bfd4a2c16, type: 3}

@@ -6,11 +6,12 @@ using UnityEngine.Events;
 
 public class Inventory : MonoBehaviour
 {
-    [SerializeField] RectTransform _reachedElementsContent;
-    [SerializeField] RectTransform _choisenElementsContent;
-    [SerializeField] ElementView _button;
-    [SerializeField] Spawner _spawner;
-    [SerializeField] RecipStorage _recipStorage;
+    [SerializeField] private RectTransform _reachedElementsContent;
+    [SerializeField] private RectTransform _choisenElementsContent;
+    [SerializeField] private ElementView _button;
+    [SerializeField] private Spawner _spawner;
+    [SerializeField] private RecipStorage _recipStorage;
+    [SerializeField] private List<Recipe> _startRecipes;
 
     private List<AlchemyElement> _choisenElements= new();
 
@@ -22,6 +23,13 @@ public class Inventory : MonoBehaviour
     private void OnEnable()
     {
         Clear(_reachedElementsContent);
+        Clear(_choisenElementsContent);
+
+        foreach (var recipe in _startRecipes)
+        {
+            ElementView elementView = Instantiate(_button, _reachedElementsContent);
+            elementView.ChangeData(recipe.Discriptions3.Sprite, recipe.Discriptions3.Name, recipe);
+        }
 
         foreach (var recipe in _recipStorage.SelectRecipes(_spawner.ReachedElements.OrderBy(e => e.ElementName)))
         {

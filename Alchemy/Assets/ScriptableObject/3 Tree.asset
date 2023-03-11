@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
   m_Name: 3 Tree
   m_EditorClassIdentifier: 
-  <Ingridient1>k__BackingField: {fileID: 8058035728899381251, guid: bbcb4079b3ae5404a827378fc66bbc55, type: 3}
-  <Ingridient2>k__BackingField: {fileID: 8058035728899381251, guid: bbcb4079b3ae5404a827378fc66bbc55, type: 3}
-  <Result>k__BackingField: {fileID: 5067769817480411335, guid: 2ad3c95402ff3b748b6404698cf90a56, type: 3}
-  <Discriptions>k__BackingField: {fileID: 11400000, guid: 9748d39a651a88d4b8af01474bf82094, type: 2}
+  <Ingridient1>k__BackingField: {fileID: 150036264658751562, guid: bbcb4079b3ae5404a827378fc66bbc55, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 150036264658751562, guid: bbcb4079b3ae5404a827378fc66bbc55, type: 3}
+  <Result>k__BackingField: {fileID: 8668459736129844211, guid: 2ad3c95402ff3b748b6404698cf90a56, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 7bfb4b2fa8882ca4389e1e2c82887492, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 7bfb4b2fa8882ca4389e1e2c82887492, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 77a50ce81cb335b40bf7ec230eda1e38, type: 2}
   <Number>k__BackingField: 3
+  <Text>k__BackingField: 
