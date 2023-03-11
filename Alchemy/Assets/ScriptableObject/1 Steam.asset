@@ -15,5 +15,8 @@ MonoBehaviour:
   <Ingridient1>k__BackingField: {fileID: 2167163639202506528, guid: 4776c309b22e85343968b0603155b911, type: 3}
   <Ingridient2>k__BackingField: {fileID: 5578610106258412074, guid: 29fdb966ad4097b48bc949eae1a05004, type: 3}
   <Result>k__BackingField: {fileID: 3987385541925821388, guid: 7ce4143c5a6fa9f49af8d5c08cc606f4, type: 3}
-  <Discriptions>k__BackingField: {fileID: 11400000, guid: ed289b8d28d6e3349abfce105bcfc18f, type: 2}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 343a897cdf98a5140a4a625e6fbfd8b1, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 98d6b0cb327922f4f899ce38871d237c, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 55a774f529fcebe4480df4cfe8d400e1, type: 2}
   <Number>k__BackingField: 1
+  <Text>k__BackingField: "\u041E\u041F\u0418\u0421\u0410\u041D\u0418\u0415 \u0410\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430\u0430"

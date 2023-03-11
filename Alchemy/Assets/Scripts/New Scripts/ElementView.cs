@@ -11,13 +11,18 @@ public class ElementView : MonoBehaviour
     [field: SerializeField] public Image Image { get; private set; }
     [field: SerializeField] public TMP_Text Text { get; private set; }
 
+    private Recipe _recipe;
+
+    public Recipe Recipe => _recipe;
+
+
     public  UnityAction OpenDiscription;
 
 
-    public void ChangeAppearance(Sprite sprite, string text,string name)
+    public void ChangeData( Sprite sprite, string text, Recipe recipe)
     {
         Image.sprite = sprite;
         Text.text = text;
-        gameObject.name = name;
+        _recipe = recipe;
     }
 }

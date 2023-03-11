@@ -3,19 +3,21 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class Spawner : MonoBehaviour, IPointerClickHandler
+public class Spawner : MonoBehaviour
 {
     [SerializeField] private RecipStorage _recipStorage;
     [SerializeField] private Canvas _canvas;
     [SerializeField] private AlchemyElement[] _startElements;
     [SerializeField] private int _startGridSize;
     [SerializeField] private int _createGridSize;
+    [SerializeField] private ClicArea _clicArea;
+    [SerializeField] private Inventory _inventory;
     public GameObject PanelAddElements;
     public GameObject PanelAllElements;
     public GameObject PanelHint;
     public GameObject MenuPanel;
-    public List<AlchemyElement> ChoisenElements;
 
+    public int ReachedCount => _reachedElements.Count;
     private List<AlchemyElement> _reachedElements;
 
     public IEnumerable<AlchemyElement> ReachedElements => _reachedElements;
@@ -35,12 +37,17 @@ public class Spawner : MonoBehaviour, IPointerClickHandler
     {
        AlchemyElement.OnCollisionDetectedAction += OnElementsCollided;
         AlchemyElement.OnDoubleClickDetectedAction += CreateCopy;
+        _clicArea.OnCliced += CreateFourElements;
+        _inventory.OnAddButtonClicked += CreateNeedElements;
+
     }
 
     private void OnDisable()
     {
        AlchemyElement.OnCollisionDetectedAction -= OnElementsCollided;
         AlchemyElement.OnDoubleClickDetectedAction -= CreateCopy;
+        _clicArea.OnCliced -= CreateFourElements;
+        _inventory.OnAddButtonClicked -= CreateNeedElements;
     }
     private void Start()
     {
@@ -52,8 +59,6 @@ public class Spawner : MonoBehaviour, IPointerClickHandler
         {
             _rectTransform = Instantiate(_startElements[i].gameObject, transform).GetComponent<RectTransform>();
             _rectTransform.anchoredPosition = item;
-            //Reach(_startElements[i]);
-
             i++;
         }
     }
@@ -70,7 +75,7 @@ public class Spawner : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void CreateFourElements(PointerEventData eventData)
     {
 
         if (Time.time - _lastClickTime <= _doubleClickTimeThreshold)
@@ -98,7 +103,7 @@ public class Spawner : MonoBehaviour, IPointerClickHandler
 
         return elementRectTransform;
     }
-    public void CreateNeedElements()
+    public void CreateNeedElements(IEnumerable<AlchemyElement> ChoisenElements)
     {
         foreach (var element in ChoisenElements)
         {
@@ -119,7 +124,6 @@ public class Spawner : MonoBehaviour, IPointerClickHandler
         }
         _x = -860;
         _y = 240;
-        ChoisenElements.Clear();
         PanelAddElements.SetActive(false);
 
     }

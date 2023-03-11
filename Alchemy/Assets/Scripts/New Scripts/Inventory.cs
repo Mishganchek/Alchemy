@@ -1,84 +1,80 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class Inventory : MonoBehaviour
 {
+    [SerializeField] RectTransform _reachedElementsContent;
+    [SerializeField] RectTransform _choisenElementsContent;
+    [SerializeField] ElementView _button;
+    [SerializeField] Spawner _spawner;
+    [SerializeField] RecipStorage _recipStorage;
 
-    [SerializeField] private GameObject _reachedElementsConteiner;
-    [SerializeField] private GameObject _chousenElementsConteiner;
-    [SerializeField] private GameObject _giveElementsPanel;
-    [SerializeField] private GameObject _buttonPrefab;
+    private List<AlchemyElement> _choisenElements= new();
 
-    public List<AlchemyElement> ChoisenElements;
+    public UnityAction <IEnumerable<AlchemyElement>> OnAddButtonClicked;
 
-    private ElementCounter _elementCounter;
-    private Canvas _canvas;
+    public IEnumerable<AlchemyElement> ChoisenElements => _choisenElements;
 
-    private void Awake()
+
+    private void OnEnable()
     {
-        _canvas = gameObject.GetComponentInParent<Canvas>();
-        _elementCounter = gameObject.GetComponentInParent<ElementCounter>();
-    }
+        Clear(_reachedElementsContent);
 
-    private void Start()
-    {
-        //foreach (var element in _elementCounter.ReachedElements.OrderBy(e => e.ElementName))
-        //{
-        //    GameObject gameObject = Instantiate(_buttonPrefab, _reachedElementsConteiner.transform);
-
-        //    gameObject.GetComponent<Image>().sprite = element.GetComponent<Image>().sprite;
-
-        //    gameObject.GetComponentInChildren<TMP_Text>().text = element.ElementName;
-
-        //}
-    }
-
-    public void CreateChoisen()
-    {
-        int x = -860;
-        int y = 240;
-
-        foreach (var element in ChoisenElements)
+        foreach (var recipe in _recipStorage.SelectRecipes(_spawner.ReachedElements.OrderBy(e => e.ElementName)))
         {
-            AlchemyElement alchemyElement = Instantiate(element, transform);
-            RectTransform _rectTransform = alchemyElement.GetComponent<RectTransform>();
-            alchemyElement.transform.SetParent(_canvas.transform);
-            alchemyElement.transform.SetSiblingIndex(2);
-            _rectTransform.anchoredPosition = new Vector2(x, y);
-
-            if (x < 860)
-            {
-                x += 200;
-            }
-            else
-            {
-                y -= 200;
-                x = -860;
-            }
+            ElementView elementView = Instantiate(_button, _reachedElementsContent);
+            elementView.ChangeData(recipe.Discriptions3.Sprite, recipe.Discriptions3.Name, recipe);
         }
 
-        x = -860;
-        y = 240;
-
-        ChoisenElements.Clear();
+        FindAllButtons();
     }
-    public void Clear(GameObject panel)
-    {
-        AlchemyElement[] elements = panel.GetComponentsInChildren<AlchemyElement>();
 
-        foreach (AlchemyElement element in elements)
+    public void Clear(RectTransform panel)
+    {
+        ElementView[] elements = panel.GetComponentsInChildren<ElementView>();
+
+        foreach (ElementView element in elements)
         {
             Destroy(element.gameObject);
         }
     }
 
-    public void AddInChoisen()
+    private void FindAllButtons()
     {
-        //Transform position = _chousenElementsConteiner.transform;
-        //ChoisenElements.Add(prefab.GetComponent<AlchemyElement>());
-        //Instantiate(prefab, position);
+        ElementButton[] buttons = FindObjectsOfType<ElementButton>();
+
+        foreach (var button in buttons)
+        {
+            button.ElementClicked += AddInChoisen;
+        }
+    }
+
+    private void AddInChoisen(Recipe recipe)
+    {
+        ElementView elementView = Instantiate(_button, _choisenElementsContent);
+        elementView.ChangeData(recipe.Discriptions3.Sprite, recipe.Discriptions3.Name, recipe);
+        _choisenElements.Add(recipe.Result);
+    }
+
+    public void AddOnTable()
+    {
+        OnAddButtonClicked?.Invoke(_choisenElements);
+        ClosePanel();
+        
+    }
+
+    public void ClosePanel()
+    {
+        _choisenElements.Clear();
+        gameObject.SetActive(false);
+    }
+
+    public void ClearChoisen()
+    {
+        _choisenElements.Clear();
+        Clear(_choisenElementsContent);
     }
 }

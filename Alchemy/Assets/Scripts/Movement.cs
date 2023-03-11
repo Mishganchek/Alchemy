@@ -28,11 +28,6 @@ public class Movement : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (_panelManager.IsGivePanelOpen|| _panelManager.IsBookPanelOpen)
-        {
-            return;
-        }
-
         if (_isDragging)
         {
             _rectTransform.position = eventData.position - _offset;

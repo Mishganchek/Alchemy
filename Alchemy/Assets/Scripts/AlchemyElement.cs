@@ -103,7 +103,6 @@ public class AlchemyElement : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
         _lastClickTime = Time.time;
     }
-
 }
 
 

@@ -16,7 +16,7 @@ public class Progress : MonoBehaviour
     }
     private void Start()
     {
-        //_textComponent.text = (ReachedElements.Count + " элементов открыто из " + (_recipStorage.Templates.Length+4));
+        _textComponent.text = (_spawner.ReachedCount + " элементов открыто из " + (_recipStorage.Templates.Length+4));
     }
 
     private void Update()

@@ -1,7 +1,4 @@
-using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 
 public class PanelRecipe : MonoBehaviour
 {
@@ -9,25 +6,31 @@ public class PanelRecipe : MonoBehaviour
     [SerializeField] private ElementView _secondElement;
     [SerializeField] private ElementView _resultElement;
 
-    private Book _book;
-
-    private void Awake()
-    {
-        _book = gameObject.GetComponentInParent<Book>();
-    }
+    [SerializeField] private Book _book;
 
     private void OnEnable()
     {
-        _book.OnDiscriptionsPanelOpen +=ChangeApperans;
-      
+        if (_book == null)
+        {
+            return;
+        }
+        _book.DiscriptionsPanelOpened += ChangeApperans;
+
     }
 
-    private void ChangeApperans(Recipe recipe)
+    private void OnDisable()
     {
+        if (_book == null)
+        {
+            return;
+        }
+        _book.DiscriptionsPanelOpened -= ChangeApperans;
+    }
 
-        _firstElement.ChangeAppearance(recipe.Discriptions.Ingridient1, recipe.Ingridient1.ElementName, recipe.Ingridient1.name);
-        _secondElement.ChangeAppearance(recipe.Discriptions.Ingridient2, recipe.Ingridient2.ElementName, recipe.Ingridient2.name);
-        _resultElement.ChangeAppearance(recipe.Discriptions.Result, recipe.Result.ElementName, recipe.Result.name);
-
+    public void ChangeApperans(Recipe recipe)
+    {
+        _firstElement.ChangeData(recipe.Discriptions1.Sprite, recipe.Ingridient1.ElementName, recipe);
+        _secondElement.ChangeData(recipe.Discriptions2.Sprite, recipe.Ingridient2.ElementName, recipe);
+        _resultElement.ChangeData(recipe.Discriptions3.Sprite, recipe.Result.ElementName, recipe);
     }
 }
