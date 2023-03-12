@@ -5,70 +5,64 @@ using UnityEngine.EventSystems;
 
 public class AlchemyElement : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler
 {
-    [SerializeField] protected string _elementName;
+    [SerializeField] private string _elementName;
 
-    public static UnityAction<AlchemyElement, AlchemyElement> OnCollisionDetectedAction;
-    public static UnityAction<AlchemyElement> OnDoubleClickDetectedAction;
+    public static event UnityAction<AlchemyElement, AlchemyElement> CollisionDetectedAction;
+    public static event UnityAction<AlchemyElement> DoubleClickDetectedAction;
 
+    private TMP_Text _title;
 
-    protected TMP_Text _textComponent;
-    protected TMP_Text _text;
-
-    private Book _book;
-    private PanelManager _panelManager;
-    private bool _triger;
-    private AlchemyElement _saveElement;
+    private bool _isInteractable;
+    private AlchemyElement _interactor;
     private float _lastClickTime;
 
-    public string Name { get; private set; }
     public string ElementName => _elementName;
-    public bool IsInteractable => !_triger;
+    public bool IsInteractable => !_isInteractable;
 
 
     protected void Start()
     {
         gameObject.name = gameObject.name.Replace("(Clone)", "");
-        _book = gameObject.GetComponentInParent<Book>();
-        _textComponent = GetComponentInChildren<TMP_Text>();
-        _textComponent.text = _elementName;
-        _textComponent.color = Color.white;
-        _textComponent.alignment = TextAlignmentOptions.Midline;
+        _title = GetComponentInChildren<TMP_Text>();
+        _title.text = _elementName;
+        _title.color = Color.white;
+        _title.alignment = TextAlignmentOptions.Midline;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (!_triger)
+        if (!_isInteractable)
         {
             return;
         }
 
         AlchemyElement alchemyElement;
 
-        if (!other.gameObject.TryGetComponent<AlchemyElement>(out alchemyElement))
+        if (!other.gameObject.TryGetComponent(out alchemyElement))
         {
             return;
         }
 
-        _saveElement = alchemyElement;
+        _interactor = alchemyElement;
     }
 
     private void OnCollisionExit2D(Collision2D other)
     {
-        if (!_triger)
+        if (!_isInteractable)
         {
             return;
         }
 
         AlchemyElement alchemyElement;
 
-        if (!other.gameObject.TryGetComponent<AlchemyElement>(out alchemyElement))
+        if (!other.gameObject.TryGetComponent(out alchemyElement))
         {
             return;
         }
 
-        if (alchemyElement == _saveElement)
+        if (alchemyElement == _interactor)
         {
-            _saveElement = null;
+            _interactor = null;
         }
 
     }
@@ -76,28 +70,27 @@ public class AlchemyElement : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     public void OnPointerDown(PointerEventData eventData)
     {
 
-        _triger = true;
+        _isInteractable = true;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        _triger = false;
+        _isInteractable = false;
 
-        if (_saveElement == null)
+        if (_interactor == null)
         {
             return;
         }
 
-        OnCollisionDetectedAction?.Invoke(_saveElement, this);
+        CollisionDetectedAction?.Invoke(_interactor, this);
 
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (Time.time - _lastClickTime <= 0.8f)
+        if (Time.time - _lastClickTime <= 0.3f)
         {
-            OnDoubleClickDetectedAction?.Invoke(this);
-
+            DoubleClickDetectedAction?.Invoke(this);
         }
 
         _lastClickTime = Time.time;

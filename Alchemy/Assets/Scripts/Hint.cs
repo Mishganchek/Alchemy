@@ -6,14 +6,13 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class Hint : MonoBehaviour
+public class Hint : GamePanel
 {
     [SerializeField] private PanelRecipe _hintRecipe;
-    public GameObject Panel;
+    [SerializeField] private TMP_Text _discription;
+
     private RecipStorage _recipStorage;
     private Spawner _spawner;
-    private RectTransform _rectTransform;
-    private TMP_Text _text;
     private IEnumerable<Recipe> _recipes;
 
     public Recipe Recipe { get; private set; }
@@ -22,8 +21,6 @@ public class Hint : MonoBehaviour
     {
         _spawner = gameObject.GetComponentInParent<Spawner>();
         _recipStorage = gameObject.GetComponentInParent<RecipStorage>();
-        _rectTransform = gameObject.GetComponent<RectTransform>();
-        _text = Panel.GetComponentInChildren<TMP_Text>();
         _recipes = _recipStorage.Templates.Where(recipe => (!_spawner.ReachedElements.Any(element => (element.name == recipe.name)))).OrderBy(recipe => recipe.Number);
     }
 
@@ -37,6 +34,6 @@ public class Hint : MonoBehaviour
         Recipe = _recipes.First();
         gameObject.transform.SetAsLastSibling();
         _hintRecipe.ChangeApperans(Recipe);
-        _text.text = $" Ближайший элемент {Recipe.Discriptions3.Name} \n Нужно смешать {Recipe.Discriptions1.NameForDiscription} и {Recipe.Discriptions2.NameForDiscription }";
+        _discription.text = $" Ближайший элемент {Recipe.Discriptions3.Name} \n Нужно смешать {Recipe.Discriptions1.NameForDiscription} и {Recipe.Discriptions2.NameForDiscription }";
     }
 }

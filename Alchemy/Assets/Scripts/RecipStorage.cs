@@ -5,20 +5,24 @@ using System.Linq;
 
 public class RecipStorage : MonoBehaviour
 {
-    [SerializeField] public Recipe[] Templates;
+    [SerializeField] private Recipe[] _templates;
 
     private Dictionary<Tuple<string, string>, AlchemyElement> _recipies = new();
 
     private Dictionary<AlchemyElement, Recipe> _requiredRecipes = new();
 
+    public IReadOnlyCollection<Recipe> Templates => _templates;
+
+
+
     private void Start()
     {
-        foreach (var template in Templates)
+        foreach (var template in _templates)
         {
             _requiredRecipes.Add(template.Result, template);
         }
 
-        foreach (var template in Templates)
+        foreach (var template in _templates)
         {
             _recipies.Add(Tuple.Create(template.Ingridient1.name, template.Ingridient2.name), template.Result);
         }

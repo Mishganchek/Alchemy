@@ -7,12 +7,10 @@ public class Movement : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
     private RectTransform _rectTransform;
     private bool _isDragging;
     private Vector2 _offset;
-    private PanelManager _panelManager;
 
     private void Start()
     {
         _rectTransform = GetComponent<RectTransform>();
-        _panelManager = GetComponentInParent<PanelManager>();
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -31,7 +29,7 @@ public class Movement : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, I
         if (_isDragging)
         {
             _rectTransform.position = eventData.position - _offset;
-            this.gameObject.transform.SetAsLastSibling();
+             transform.SetAsLastSibling();
         }
     }
 }
