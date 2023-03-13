@@ -94,7 +94,7 @@ PrefabInstance:
     - target: {fileID: 1643110339065309072, guid: 16f3ded5f182be64aafaec9bfd4a2c16, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -222803581, guid: e33e2a8fb2b257d4790f571901ff1831, type: 3}
+      objectReference: {fileID: 1405243388, guid: 97a42b453e92d91438231a92ddf088b6, type: 3}
     - target: {fileID: 4312813355417624130, guid: 16f3ded5f182be64aafaec9bfd4a2c16, type: 3}
       propertyPath: m_Name
       value: 19 Forest

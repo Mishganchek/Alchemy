@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 51 Wolf
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 5376928061971724185, guid: 2d11230490c214e45a9bb12eaf63d314, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 3269225420134416040, guid: e28bb2d4c22622949a3613eb72096407, type: 3}
+  <Result>k__BackingField: {fileID: 1768693879265013608, guid: 981e699b0303de54f99ef73daaca3c89, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: ac59f0dc30145b44986fa093bb186c9f, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 78aaa6f000d944a46b62dc0627c59f78, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 1e17c386e2c735147bf12570e5911286, type: 2}
+  <Number>k__BackingField: 51
+  <Text>k__BackingField: 

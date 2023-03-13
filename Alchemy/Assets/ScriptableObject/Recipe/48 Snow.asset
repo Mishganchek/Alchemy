@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 48 Snow
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 2761098118399383832, guid: 5a81b29ad9e3cde48bf183b0663bebd5, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 2623953334088616776, guid: 32b3c2922058c5349b984fe7b508dd57, type: 3}
+  <Result>k__BackingField: {fileID: 6253656944787521653, guid: 83b3b0ec4900859498c1fcdced12b56d, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 8d4ba1ec4bad07f4fbf514db1b533aa3, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: e70b67c32d86b2a4d9cf031b4a1aeea0, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 035813349a5f0134e88c01c3f7977781, type: 2}
+  <Number>k__BackingField: 48
+  <Text>k__BackingField: 

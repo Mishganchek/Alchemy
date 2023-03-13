@@ -19,10 +19,6 @@ public class Inventory : GamePanel
 
     private void OnEnable()
     {
-        _choisenElements.Clear();
-        Clear(_reachedElementsContent);
-        Clear(_choisenElementsContent);
-
         foreach (var recipe in _startRecipes)
         {
             ElementView elementView = Instantiate(_button, _reachedElementsContent);
@@ -36,6 +32,13 @@ public class Inventory : GamePanel
         }
 
         FindAllButtons();
+    }
+
+    private void OnDisable()
+    {
+        _choisenElements.Clear();
+        Clear(_reachedElementsContent);
+        Clear(_choisenElementsContent);
     }
 
     public void Clear(RectTransform panel)

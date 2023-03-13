@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 37 Cave
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 64096025625823473, guid: 71801db76f878484c8f5900a0f37f018, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 7885103228443749079, guid: d04016358d39b314b87d747cd80a0b4d, type: 3}
+  <Result>k__BackingField: {fileID: 858693841648093460, guid: c3f43c3bfa067eb449681dc852fb9806, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 1fd3b06f4535e1544a9a714227674bbc, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 29802f75d90afb74a94aaff9e45dbe7a, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: cfb728fb81611954b8bffc125cde5af5, type: 2}
+  <Number>k__BackingField: 37
+  <Text>k__BackingField: 

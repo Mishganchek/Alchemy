@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 56 Ostrich
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 5659460486390713597, guid: c94021f6530576c40923a3707afe7a3f, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 6278298296773272192, guid: ded439bb99d545e479e50d31c478bc29, type: 3}
+  <Result>k__BackingField: {fileID: 4536052057403006732, guid: 76565871e23f5ab4b8fddb9761f21a7c, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 5befa562d8568e844b3f91c449d007cb, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: a59480b3cecd3224b83076112a89d721, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 2f51de0e92b491a479f9b4ca4e7dd93d, type: 2}
+  <Number>k__BackingField: 56
+  <Text>k__BackingField: 

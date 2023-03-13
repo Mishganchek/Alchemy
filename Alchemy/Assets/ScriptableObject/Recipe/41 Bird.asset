@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 41 Bird
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 6876411522203721369, guid: c35da4f0b5e387348a3acd3e59f6af4b, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 3269225420134416040, guid: e28bb2d4c22622949a3613eb72096407, type: 3}
+  <Result>k__BackingField: {fileID: 5659460486390713597, guid: c94021f6530576c40923a3707afe7a3f, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: ab9f1a50c0d52c44fbeaa4d3b2391ebb, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 78aaa6f000d944a46b62dc0627c59f78, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 5befa562d8568e844b3f91c449d007cb, type: 2}
+  <Number>k__BackingField: 41
+  <Text>k__BackingField: 

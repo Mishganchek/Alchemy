@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 43 Caterpillar
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 150036264658751562, guid: bbcb4079b3ae5404a827378fc66bbc55, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 1094446864027494771, guid: a6e20242b806720459915380e94d2c7e, type: 3}
+  <Result>k__BackingField: {fileID: 4152953946928201886, guid: cc4c83ce8a54db444b9a9475f823d385, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 7bfb4b2fa8882ca4389e1e2c82887492, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 1d6333fd243cd0a46aa7f63daa1310bb, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 2f9b2f74b29d4ee4e849e2c51e926bb5, type: 2}
+  <Number>k__BackingField: 43
+  <Text>k__BackingField: 

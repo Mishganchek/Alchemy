@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 44 Butterfly
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 4152953946928201886, guid: cc4c83ce8a54db444b9a9475f823d385, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 7885103228443749079, guid: d04016358d39b314b87d747cd80a0b4d, type: 3}
+  <Result>k__BackingField: {fileID: 7479283668253920545, guid: 94e629fa5fc51c947a61f3faa9b10371, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 2f9b2f74b29d4ee4e849e2c51e926bb5, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 29802f75d90afb74a94aaff9e45dbe7a, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 26e30c4db4d1b2647bb91ae291397e21, type: 2}
+  <Number>k__BackingField: 44
+  <Text>k__BackingField: 

@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -13,6 +12,8 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Inventory _inventory;
     [SerializeField] private Grid _basicElements;
     [SerializeField] private Grid _table;
+    [SerializeField] private GameObject _teach;
+
 
     private List<AlchemyElement> _reachedElements = new();
     private AlchemyElement _result;
@@ -44,11 +45,17 @@ public class Spawner : MonoBehaviour
     {
         int i = 0;
 
-        foreach (var item in  _basicElements)
+        foreach (var item in _basicElements)
         {
             _rectTransform = Instantiate(_startElements[i].gameObject, transform).GetComponent<RectTransform>();
             _rectTransform.anchoredPosition = item;
             i++;
+        }
+
+        if (SaveSystem.AmountOfSessions == 0)
+        {
+            _teach.SetActive(true);
+            _teach.transform.SetAsLastSibling();
         }
     }
 
@@ -76,7 +83,7 @@ public class Spawner : MonoBehaviour
 
             foreach (var item in _basicElements)
             {
-                InstantiateElement(_startElements[i].gameObject, new Vector2( item.x+clickPosition.x, item.y +clickPosition.y));
+                InstantiateElement(_startElements[i].gameObject, new Vector2(item.x + clickPosition.x, item.y + clickPosition.y));
                 i++;
             }
         }
@@ -152,4 +159,3 @@ public class Spawner : MonoBehaviour
         }
     }
 }
-    

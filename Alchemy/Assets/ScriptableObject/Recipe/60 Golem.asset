@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 60 Golem
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 5382694835470198773, guid: c5863f362cc08734986c73d4ea7a0620, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 3269225420134416040, guid: e28bb2d4c22622949a3613eb72096407, type: 3}
+  <Result>k__BackingField: {fileID: 3373745703655008263, guid: 6d130ab166357954fb9c57c2661fd1de, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: b62c210e6355cf64096b456b8d020e3d, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 78aaa6f000d944a46b62dc0627c59f78, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 7813fb220f743cb4e985e65269cf24ce, type: 2}
+  <Number>k__BackingField: 60
+  <Text>k__BackingField: 

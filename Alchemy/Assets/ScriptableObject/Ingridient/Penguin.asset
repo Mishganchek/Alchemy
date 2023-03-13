@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d9f7a3d53922240b071250df768b68, type: 3}
+  m_Name: Penguin
+  m_EditorClassIdentifier: 
+  <Sprite>k__BackingField: {fileID: -843357619, guid: e671a0a782638eb4ca4a67b1d5023d39, type: 3}
+  <NameForDiscription>k__BackingField: "\u041F\u0438\u043D\u0433\u0432\u0438\u043D\u0430"
+  <Name>k__BackingField: "\u041F\u0438\u043D\u0433\u0432\u0438\u043D"

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 49 Cotton
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 3611208731659855075, guid: 96e2a3de9d9acbd4e938859b1d52cd46, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 5257487195456716315, guid: a938f27d005c55b4d9f287a133542377, type: 3}
+  <Result>k__BackingField: {fileID: 2916834394999280615, guid: dc43466824ba3184592f7c23e99f7b35, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 7bea4ee124e1cb44e918ed24788e688c, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: e58a45bd6a234b34fb55fae83f3cce9f, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: ae7745d60b22b5c48847144247ef7024, type: 2}
+  <Number>k__BackingField: 49
+  <Text>k__BackingField: 

@@ -7,10 +7,17 @@ public class SaveSystem : MonoBehaviour
 
     [SerializeField] private Spawner _spawner;
     private string[] _saveData;
-    
 
-    private void Start()
+    public static int AmountOfSessions { get; private set; } = 0;
+    
+    private void Awake()
     {
+        if(PlayerPrefs.HasKey(nameof(AmountOfSessions)))
+        {
+            AmountOfSessions = PlayerPrefs.GetInt(nameof(AmountOfSessions));
+        }
+
+        
         LoadGame();
     }
 
@@ -27,6 +34,8 @@ public class SaveSystem : MonoBehaviour
         }
 
         File.WriteAllLines(Application.persistentDataPath + FileName, _saveData);
+
+        PlayerPrefs.SetInt(nameof(AmountOfSessions), ++AmountOfSessions );
     }
 
     private void LoadGame()

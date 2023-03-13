@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 38 Death
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 3269225420134416040, guid: e28bb2d4c22622949a3613eb72096407, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 7885103228443749079, guid: d04016358d39b314b87d747cd80a0b4d, type: 3}
+  <Result>k__BackingField: {fileID: 6605432460962143999, guid: e6c23d46485c68e409694bc2e89c579b, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 78aaa6f000d944a46b62dc0627c59f78, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 29802f75d90afb74a94aaff9e45dbe7a, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 02cd7ceaeca071e4ab885b78b1bcaddc, type: 2}
+  <Number>k__BackingField: 38
+  <Text>k__BackingField: 
