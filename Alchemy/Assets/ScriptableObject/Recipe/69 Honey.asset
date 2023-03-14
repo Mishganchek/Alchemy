@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 69 Honey
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 68989797883147254, guid: 4724ad7753f5e214f9cde5d281aae5e7, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 6956873409080506505, guid: af693f767634eb849869c055e9d243c9, type: 3}
+  <Result>k__BackingField: {fileID: 3192297393145377445, guid: a23af72c3f7f69940a7ec369555e7394, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: ed1f9d0526038e14f9d47b779a1ecf4c, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 630e781f3233d1745afe269d563cde3a, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 3f9ac783eca96434d841ad5572d2ea63, type: 2}
+  <Number>k__BackingField: 69
+  <Text>k__BackingField: 

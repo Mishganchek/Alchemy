@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 78 Clothes
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 8720250662054990711, guid: 33f5395fa5ab4dd46b32a16662f10e5b, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 8247394544904421608, guid: c09ec5b1ba5c9b140b9795fff675378b, type: 3}
+  <Result>k__BackingField: {fileID: 7349138967912300715, guid: ad3edbeaa51a243429c9930e3a2ad717, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 8807fe1d3ec2c7649a4f39973b9c1fce, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: ab75f543d0c5e174cb03e2d55beebe62, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 20f5235e12262fa4db5c885daf1c78ca, type: 2}
+  <Number>k__BackingField: 78
+  <Text>k__BackingField: 

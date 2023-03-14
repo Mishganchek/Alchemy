@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 72 Tea
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 150036264658751562, guid: bbcb4079b3ae5404a827378fc66bbc55, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 3987385541925821388, guid: 7ce4143c5a6fa9f49af8d5c08cc606f4, type: 3}
+  <Result>k__BackingField: {fileID: 7858583734636396276, guid: 3c17b0dc64ed0bb4886457de078eba3f, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 7bfb4b2fa8882ca4389e1e2c82887492, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 55a774f529fcebe4480df4cfe8d400e1, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 8abc2c8e0964e1044b4e9fb41bd32c98, type: 2}
+  <Number>k__BackingField: 72
+  <Text>k__BackingField: 

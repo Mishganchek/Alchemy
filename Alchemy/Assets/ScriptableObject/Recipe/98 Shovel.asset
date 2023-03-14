@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 98 Shovel
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 3653463194915367832, guid: c8176db224beb344d931005b273c6ee9, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 6820326890381722017, guid: adecac76f382eff41ac1211c892d2be2, type: 3}
+  <Result>k__BackingField: {fileID: 8532807936894216397, guid: 5e75810f86b4c3f44a13c4584de56cdd, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: af21916d6f47bf340ba901ac1746ec5c, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 52f7c98f3901f40488092a6396300107, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 3f8bed95e66dc4a4e86d41e004b8892f, type: 2}
+  <Number>k__BackingField: 98
+  <Text>k__BackingField: 

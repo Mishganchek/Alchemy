@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 89 Sunflower
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 6956873409080506505, guid: af693f767634eb849869c055e9d243c9, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 8476271235014196656, guid: e612d19e3500a644498856b25c8ab6ed, type: 3}
+  <Result>k__BackingField: {fileID: 2271972314578854711, guid: 3b0954a4e5cd7f24880525d134dd895a, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 630e781f3233d1745afe269d563cde3a, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: ff4f81019dfee92469fef531c7884de5, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 7f2ec590131b6a940af44976b3ddde6a, type: 2}
+  <Number>k__BackingField: 89
+  <Text>k__BackingField: 

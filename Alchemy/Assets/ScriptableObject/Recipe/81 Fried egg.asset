@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 81 Fried egg
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 5176521282511214065, guid: f6ba734eac96699409a098849ce82fab, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 2167163639202506528, guid: 4776c309b22e85343968b0603155b911, type: 3}
+  <Result>k__BackingField: {fileID: 3976130413520760792, guid: 97619d88bb3ec5546aaeb42541ea2eea, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: a73dfdbcfc3db264e9b3e45f25ee75c4, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 343a897cdf98a5140a4a625e6fbfd8b1, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 91ef372a1bddd0842bb15a61f419b9cd, type: 2}
+  <Number>k__BackingField: 81
+  <Text>k__BackingField: 

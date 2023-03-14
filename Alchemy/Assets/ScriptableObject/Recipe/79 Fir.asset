@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 79 Fir
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 8668459736129844211, guid: 2ad3c95402ff3b748b6404698cf90a56, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 7555739117974362548, guid: d39919e1cba86c945a4933b5eca5d16f, type: 3}
+  <Result>k__BackingField: {fileID: 7592764794769420970, guid: cc592f8b7aad1e64889813f51c0b5f63, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 77a50ce81cb335b40bf7ec230eda1e38, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 6c9e2de22c0018f4db5de80170f3ee75, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: 7290340ff9d0a0047931453fb790d424, type: 2}
+  <Number>k__BackingField: 79
+  <Text>k__BackingField: 

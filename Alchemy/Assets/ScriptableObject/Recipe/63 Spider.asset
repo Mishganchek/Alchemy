@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 63 Spider
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 2401206323636763096, guid: 6c35e0afe132e364aaf16dca9108d9fc, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 2401206323636763096, guid: 6c35e0afe132e364aaf16dca9108d9fc, type: 3}
+  <Result>k__BackingField: {fileID: 2981739031122215797, guid: 1fadde6e87ca33744bdcb9cd627e8f15, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 192dc3470bee19a47b5620f942f51ac3, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 192dc3470bee19a47b5620f942f51ac3, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: d2e1e2f90445bbf4183d6e9d5afddf3f, type: 2}
+  <Number>k__BackingField: 63
+  <Text>k__BackingField: 

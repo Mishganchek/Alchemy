@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e683208e2b98b439e0667f15303086, type: 3}
+  m_Name: 75 Tobacco
+  m_EditorClassIdentifier: 
+  <Ingridient1>k__BackingField: {fileID: 150036264658751562, guid: bbcb4079b3ae5404a827378fc66bbc55, type: 3}
+  <Ingridient2>k__BackingField: {fileID: 4560964266282512026, guid: 1915b87030677834186bdb22b055cc64, type: 3}
+  <Result>k__BackingField: {fileID: 1145013777847687143, guid: 606ee549f724a7649a18ef64db224afa, type: 3}
+  <Discriptions1>k__BackingField: {fileID: 11400000, guid: 7bfb4b2fa8882ca4389e1e2c82887492, type: 2}
+  <Discriptions2>k__BackingField: {fileID: 11400000, guid: 44e0b4789cc16c24aaf06091d3943c45, type: 2}
+  <Discriptions3>k__BackingField: {fileID: 11400000, guid: da51cfe750fdf544c9b12d5bdab69aea, type: 2}
+  <Number>k__BackingField: 75
+  <Text>k__BackingField: 
