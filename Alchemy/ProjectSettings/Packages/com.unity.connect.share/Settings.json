@@ -21,7 +21,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Users/vipvi/OneDrive/Рабочий стол/0,1;C:/Users/vipvi/OneDrive/Documents/GitHub/Alchemy/Alchemy/WebGL Builds;;;;;;;;\"}"
+                "value": "{\"m_Value\":\"C:/Users/vipvi/OneDrive/Рабочий стол/Build3;C:/Users/vipvi/OneDrive/Рабочий стол/build2;C:/Users/vipvi/OneDrive/Рабочий стол/build1;C:/Users/vipvi/OneDrive/Рабочий стол/alch;C:/Users/vipvi/OneDrive/Рабочий стол/Алхимия;C:/Users/vipvi/OneDrive/Рабочий стол/0,1;C:/Users/vipvi/OneDrive/Documents/GitHub/Alchemy/Alchemy/WebGL Builds;;;\"}"
             }
         ]
     }

@@ -32,6 +32,7 @@ public class Hint : GamePanel
     private void ShowDiscription()
     {
         Recipe = _recipes.First();
+
         gameObject.transform.SetAsLastSibling();
         _hintRecipe.ChangeApperans(Recipe);
         _discription.text = $" Ближайший элемент {Recipe.Discriptions3.Name} \n Нужно смешать {Recipe.Discriptions1.NameForDiscription} и {Recipe.Discriptions2.NameForDiscription }";

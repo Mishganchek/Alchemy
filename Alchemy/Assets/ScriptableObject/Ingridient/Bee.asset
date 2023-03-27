@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d9f7a3d53922240b071250df768b68, type: 3}
   m_Name: Bee
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 0}
-  <NameForDiscription>k__BackingField: 
-  <Name>k__BackingField: 
+  <Sprite>k__BackingField: {fileID: -1055579390, guid: ec233c68624b7104ca52edf8e89aea13, type: 3}
+  <NameForDiscription>k__BackingField: "\u041F\u0447\u0435\u043B\u0443"
+  <Name>k__BackingField: "\u041F\u0447\u0435\u043B\u0430"
